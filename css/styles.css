@@ -1,4 +1,4 @@
-root {
+:root {
     font-size: 16px;
 }
 html {
@@ -10,12 +10,13 @@ html {
 body h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     color: #071952;
+    line-height: 1.25;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 20% 55% 1fr;
+    grid-template-rows: 15% 55% 1fr;
     background-color: white;
 }
 
@@ -25,6 +26,7 @@ body h1, h2, h3, h4, h5, h6, p {
     background: linear-gradient(#088395,  white 80%);
     color: #071952;
     text-align: center;
+    z-index: 1;
 }
 
 #header a {
@@ -127,7 +129,7 @@ button:active {
 @media (orientation: landscape) {
 
     .container {
-        grid-template-rows: 11% 35% 1fr;
+        grid-template-rows: 15% 35% 1fr;
     }
     #header h1 {
         font-size: 2rem;
