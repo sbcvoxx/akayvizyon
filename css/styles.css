@@ -44,6 +44,7 @@ p {font-size: calc(1rem * var(--text-modifier));}
     background: linear-gradient(white 80%, #37b7c3);
 }
 #slideshow__box {
+    display: none;
     margin: 0 auto;
     position: relative;
     background-color: white;
