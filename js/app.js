@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     $("#slideshow__box > div:gt(0)").hide();
 
     setInterval(function() {
@@ -9,4 +10,6 @@ $(document).ready(function() {
         .end()
         .appendTo('#slideshow__box');
     }, 1500);
+    
+    $("#slideshow__box").show();
 });
