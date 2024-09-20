@@ -34,7 +34,7 @@ body {
 h1 {font-size: calc(2rem * var(--text-modifier));}
 h2 {font-size: calc(1.5rem * var(--text-modifier));}
 h3 {font-size: calc(1.17rem * var(--text-modifier));}
-p, button {font-size: calc(1rem * var(--text-modifier));}
+p, button, a {font-size: calc(1rem * var(--text-modifier));}
 #header h1 {
     padding-top: 1rem;
     color: #ebf4f6;
@@ -101,12 +101,19 @@ button {
     margin-left: 1rem;
     cursor: pointer;
 }
-button {text-decoration: none;}
+button a {
+    color: #ebf4f6;
+    text-decoration: none;
+}
+button a:hover,
+button a:active {
+    color: #071952;
+}
 button:hover,
 button:active {
     color: #071952;
     background-color: #ebf4f6;
-    /* border: 1px solid #37b7c3; */
+    border: 1px solid #37b7c3;
 }
 button:focus {outline: none;}
 .telephone button {margin-left: 0;}
